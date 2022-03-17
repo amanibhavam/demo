@@ -1,4 +1,4 @@
-from amani import __version__
+from amanibhavam import __version__
 
 
 def test_version():
