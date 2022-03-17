@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "debug demo",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "program": "${file}",
+      "args": ["one", "two", "three"]
+    }
+  ]
+}
