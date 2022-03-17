@@ -23,3 +23,13 @@ repos:
         language: system
         files: '\.cue$'
         pass_filenames: true
+
+  - repo: https://github.com/psf/black
+    rev: 22.1.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
