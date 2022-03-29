@@ -1,15 +1,10 @@
-package template
+package imma
 
 import (
-	"github.com/defn/boot/project"
-	"github.com/defn/boot/devcontainer"
+	Compute "github.com/amanibhavam/defn/compute/imma"
+	App "github.com/amanibhavam/defn/app/admin"
 )
 
-#BootContext: {
-	project.#Project
-	devcontainer.#DevContainer
-}
-
-bootContext: #BootContext & {
-	codeowners: ["@jojomomojo", "@amanibhavam"]
+bootContext: Compute.bootContext & {
+	app: imma: App.#Admin
 }
